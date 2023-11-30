@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduccion a Css</title>
+
+    <link rel="stylesheet" href="./assets/style/style.css">
+
+</head>
+<body>
+
+    <!--
+Tenemos tres formas distintas de agregar estilos a un documento html:
+
+Inline (en línea)
+Para trabajar con los estilos in line utilizamos la palabra reservada style y con esto ya le damos la instrucción de lo que queremos añadir
+Tiene mayor jerarquía sobre la etiqueta style
+    -->
+    <h1>inline</h1>
+    <p style="background-color: rgb(0, 204, 255); color: blueviolet; font-size: xx-large;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, qui quidem! Ut corporis exercitationem esse veritatis architecto fuga cumque labore atque molestias sint asperiores ad ipsam in modi, dolorum qui.</p>
+    
+<!--Utilizando la etiqueta <style>
+cuando usamos los estilos dentro de la etiqueta style, "separamos" los estilos de etiqueta, para mantener un código limpio y claro.
+-->
+<style>
+body {
+    background-color: brown;
+}
+
+</style>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ducimus nihil, consequuntur quo aliquid molestias. Atque autem eaque dolores voluptate odio molestiae! In tenetur ducimus reiciendis suscipit debitis omnis sit.</p>
+    
+<!--Referencia a un documento de estilos extern (buena práctica)
+    Código más limpio
+    Código más entendible
+    Velocidad de lectura en página
+    Escalabilidad (mejoras en proyecto)
+
+    Utilizar estilo de un documento externo significa que vamos a tener 2 documentos; uno para HTML index.html con la estructura(base) y por otro lado tenemos el documento llamado style.css para darle estilo.
+
+-->
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, consequuntur nostrum eaque perspiciatis nemo, quia ratione adipisci possimus architecto labore totam recusandae quis! Odit velit, sed quam dolore natus quo?</p>
+
+
+<!--clases y ID
+Todos pertenecemos a la clase CH35
+nuestro ID sería nuestro nombre
+la palabra reservada class (.)
+la palabra reservad id (#)
+-->
+<div class="generation">
+    <h3 class="CH35" id="Rey">Rey</h3>
+    <h3 class="CH35" id="Uriel">Uriel</h3>
+</div>
+
+<div>
+<h3 class="CH35" id="Rene">Rene</h3>
+<h3 class="CH35" id="Marco">Marco</h3>
+</div>
+
+<!--
+El modelo de caja nos permite establecer el diseño de nuestro sitio web, ya que hace que nuestros elementos sepresenten en formas rectangulares y de esta forma podemos modificar el aspecto, tamaño, diseño, etc.
+-->
+
+<h3>Lista de super</h3>
+<ul>
+    <div class="caja">
+        <li ">Fruta</li>
+         <ol>
+            <li>Manzana</li>
+            <li>Fresa</li>
+            <li>Aguacate</li>
+        </ol>
+    </div>
+    <li class="titulo">Carnes</li>
+        <ol>
+            <li>Bisteck</li>
+            <li>Pollo</li>
+            <li>Arrachera</li>
+        </ol>
+    <li class="titulo" id="especial">Lacteos</li>
+        <ol>
+            <li>Leche</li>
+            <li>Yogurth</li>
+            <li>Queso</li>
+        </ol>
+    </div>
+    <li class="titulo">Limpieza</li>
+        <ol>
+            <li>Cloro</li>
+            <li>Lavatrastes</li>
+            <li>Servitoallas</li>
+        </ol>
+</ul>
+
+</body>
+</html>

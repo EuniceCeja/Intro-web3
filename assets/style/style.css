@@ -1,0 +1,37 @@
+p{
+    background-color: rgb(43, 255, 0);
+}
+
+#Rey{
+    color: grey;
+}
+
+#Rene {
+    color: aqua;
+}
+
+.CH35{
+    background-color: blue;
+}
+
+.caja{
+    background-color: chartreuse;
+}
+
+.titulo{
+    background-color: crimson;
+}
+
+#especial{
+    background-color: aqua;
+}
+
+.generation{        /** div**/
+    width: 200;
+    height: 200;
+    margin: 10px 80px;
+    padding: 2px 20px;
+    border: double salmon;
+}
+
+/* El anterior codigo es sobre clases */
